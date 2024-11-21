@@ -1,3 +1,5 @@
+# Problem Link
+# https://www.naukri.com/code360/problems/number-of-digits_9173?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems
 import math
 # Calculate the count of digits in 'n'
 # using logarithmic operation log10(n) + 1.
