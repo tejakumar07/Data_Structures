@@ -8,7 +8,8 @@ ABCDE
 
 '''
 
-n=int(input("What's N: "))
+n = int(input("What's N: "))
+
 for i in range(0,n):
     alpha = 69-i
     for j in range(0,i+1):
