@@ -13,7 +13,7 @@
 
 """
 
-n = 6
+n = int(input("What's N: "))
 
 # This is for the Upper Symmetry
 for i in range(0,n):
