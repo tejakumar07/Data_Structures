@@ -1,0 +1,9 @@
+1) Digit Concept
+2) Count Digits
+3) Reverse Number
+4) Palindrome
+5) Armstrong Number
+6) Print all divisiors
+7) Prime
+8) GCD
+9) Euclidean Algorithm
