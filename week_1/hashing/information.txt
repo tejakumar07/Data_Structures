@@ -1,0 +1,46 @@
+HASHING TYPES:
+
+  When Do We Use Different Hashing Methods?
+
+  1)Direct Hashing: Simple, fast, but prone to collisions. Best for small datasets.
+
+  2)Division Hashing: Most commonly used. Suitable for both small and large datasets.
+
+  3)Multiplicative Hashing: Helps when we want more even distribution of data.
+
+  4)Folding Hashing: Good for large numbers or long strings.
+
+  5)Polynomial Hashing: Used in string hashing algorithms.
+
+  6)Cryptographic Hashing: Security purposes, password storage, etc.
+
+  7)Linear Probing and Chaining: Handle collisions in hash tables effectively.
+
+
+
+    What is a Collision in Hashing?
+
+    A collision occurs when two different pieces of data (like different keys) hash to the same index or location in the hash table. This happens because the hash function maps a large set of possible inputs (like strings, numbers, etc.) into a smaller set of slots (the size of the hash table).
+
+    For example:
+
+    If two different strings, say "apple" and "orange", both get mapped to the same index in the hash table, we have a collision.
+
+    Why Do Collisions Happen?
+
+    Collisions are inevitable because:
+
+    Finite Table Size: Hash tables have a limited size, but the input data can be of infinite size. So, when you map a larger dataset to a fixed-size array, some data will inevitably collide.
+
+    Limited Range of Hash Values: The hash function converts data into a fixed-size output, which limits the range of possible results. This can cause two different data elements to result in the same hash value.
+
+    Example of a Collision:
+
+    Let’s say we have a hash table of size 10. If we apply the hash function hash(data) % 10 to two numbers 21 and 31:
+
+    21 % 10 = 1
+    31 % 10 = 1
+
+    Both 21 and 31 will collide at index 1 because they have the same hash value when we take modulo 10.
+
+VIDEO LINK: https://youtu.be/KEs5UyBJ39g?si=NiqAAUJTtItBEBE2
