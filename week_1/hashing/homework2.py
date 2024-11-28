@@ -23,39 +23,38 @@ Explanation: The frequency of 2 is 3, i.e. the highest and the frequency of 3 is
 # Asked to Solve using 2 Methods
 
 # Method - I (Brute-Force approach(Using two loops):)
-def highest_lowest_frequency(arr):
-    # Step 1: Create a frequency map using a dictionary
-    freq_map = {}
-    
-    # First loop: Count the frequency of each element
-    for num in arr:
-        if num in freq_map:
-            freq_map[num] += 1
+def fetching(array, query):
+    memory = {}
+
+    # Count the frequency of each element in the array
+    for num in array:
+        if num in memory:
+            memory[num] += 1
         else:
-            freq_map[num] = 1
-    
-    # Step 2: Initialize variables to keep track of highest and lowest frequencies
-    highest_freq = -1
-    lowest_freq = float('inf')
+            memory[num] = 1
+
+    # Initialize variables for highest and lowest frequency
+    highest_frequency = float('-inf')
+    lowest_frequency = float('inf')
     highest_element = None
     lowest_element = None
-    
-    # Second loop: Traverse the frequency map to find the highest and lowest frequencies
-    for num, freq in freq_map.items():
-        if freq > highest_freq:
-            highest_freq = freq
+
+    # Traverse the frequency map to find the highest and lowest frequencies
+    for num, freq in memory.items():
+        if freq > highest_frequency:
+            highest_frequency = freq
             highest_element = num
-        if freq < lowest_freq:
-            lowest_freq = freq
+        if freq < lowest_frequency:
+            lowest_frequency = freq
             lowest_element = num
 
-    return highest_element, highest_freq, lowest_element, lowest_freq
+    return highest_element, highest_frequency, lowest_element, lowest_frequency
 
 
-# Test the function
-arr = [10, 5, 10, 15, 10, 5]
-highest, highest_freq, lowest, lowest_freq = highest_lowest_frequency(arr)
+if __name__ == "__main__":
+    array = [10, 5, 10, 15, 10, 5]
+    query = list(map(int, input("Enter query elements: ").split()))
+    highest, highest_freq, lowest, lowest_freq = fetching(array, query)
 
-print(f"Highest frequency element: {highest} with frequency: {highest_freq}")
-print(f"Lowest frequency element: {lowest} with frequency: {lowest_freq}")
-
+    print(f"Highest frequency element: {highest} with frequency: {highest_freq}")
+    print(f"Lowest frequency element: {lowest} with frequency: {lowest_freq}")
