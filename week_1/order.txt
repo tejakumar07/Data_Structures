@@ -1,0 +1,9 @@
+This is the week_1
+    1) pattern
+    2) basic_maths
+    3) recursion
+    4) hashing
+
+Independent Topics that covered in later weeks
+    1) searching_techniques
+    2) sorting_techinques
