@@ -1,11 +1,11 @@
 def merge_array(array,low,mid,high):
-    temp= []
+    temp = []
     left = low
-    right = mid + 1
+    right = mid +1
     while left <= mid and right <= high:
         if array[left] <= array[right]:
             temp.append(array[left])
-            left += 1
+            left+=1
         else:
             temp.append(array[right])
             right += 1
@@ -16,9 +16,9 @@ def merge_array(array,low,mid,high):
         temp.append(array[right])
         right += 1
     for i in range(len(temp)):
-        array[low + i ] = temp [i]
+        array[low+i] = temp[i]
 def merge_sort(array,low,high):
-    if low < high:
+    if low >= high:
         return
     mid = (low+high) // 2
     merge_sort(array,low,mid)
