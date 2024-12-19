@@ -1,0 +1,15 @@
+Key Steps for Patterns Using Nested Loops:
+
+1)Run the outer loop:
+    Count the number of lines (rows).
+
+2)Run the inner loop:
+    Focus on the columns.
+    Connect the inner loop somehow to the rows.
+
+3)Print the character (*):
+    Print this inside the inner for loop.
+
+4)Observe symmetry (optional):
+    Patterns often exhibit symmetrical properties.
+    The outer loop controls rows, the inner loops handle spaces and stars, and symmetry is key to aligning the pattern.
