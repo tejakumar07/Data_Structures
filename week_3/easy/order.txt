@@ -1,0 +1,23 @@
+# Week -3 Order
+
+1) largestelement.py
+2) largestelement1.py
+3) secondlargestelement.py
+4) secondlargestelement1.py
+5) secondlargestelement2.py
+6) secondsmallest.py #This is the continous approach
+7) sortedarray.py
+8) removeduplicatesfromsortedarray.py
+9) removeduplicatesfromsortedarray1.py
+10) leftrotatearray.py
+11) leftrotatearray1.py
+12) leftrotatearray2.py
+13) leftrotatearray3.py
+14) rightrotatearray.py
+15) movingzeroestoend.py
+15) movingzeroestoend1.py
+16) linearsearch.py
+17) unionoftwoarrays.py
+18) unionoftwoarrays1.py
+19) intersectionofarrays.py
+20) intersectionofarrays1.py
