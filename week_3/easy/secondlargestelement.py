@@ -1,12 +1,12 @@
 # This code is about the second largest element in the list
 # This is the Brute Force approach
-
-arr = [2,4,1,5,7,7,10,10]
+arr = [12,89,120,98,12,44,1888,1888,1888,1887]
+arr.sort()
+largest = arr[-1]
 n = len(arr)
-largest_element = arr[n-1]
 
-for i in range(n-2,0,-1):
-    if largest_element != arr[i]:
-        second_largest = arr[i]
+for i in range(n-2, -1, -1):
+    if arr[i] != largest:
+        secondlargest = arr[i]
+        print(secondlargest)
         break
-print(f"The Second Largest Element is: {second_largest}")
