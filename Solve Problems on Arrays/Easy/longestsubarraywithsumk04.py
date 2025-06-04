@@ -2,7 +2,7 @@ def LongestSubArray(nums, k):
     from collections import defaultdict
 
     hash_map = defaultdict(int)
-    hash_map[0] = 1   # empty prefix sum
+    hash_map[0] = 1 
     curr_sum = 0
     count = 0
 
