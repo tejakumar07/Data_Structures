@@ -8,5 +8,5 @@ def NextPermutation(arr):
     return list(next_perm)
 
 if __name__ == "__main__":
-    arr = [3,1,2]
+    arr = [2,3,1]
     print(NextPermutation(arr))
