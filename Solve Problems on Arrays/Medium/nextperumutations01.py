@@ -14,11 +14,7 @@ def nextPermutation(nums):
         nums[i], nums[j] = nums[j], nums[i]
 
     # Step 3: Reverse the part from i+1 to end
-    left, right = i + 1, n - 1
-    while left < right:
-        nums[left], nums[right] = nums[right], nums[left]
-        left += 1
-        right -= 1
+    nums[i + 1:] = reversed(nums[i +1:])
 
     return nums
 
