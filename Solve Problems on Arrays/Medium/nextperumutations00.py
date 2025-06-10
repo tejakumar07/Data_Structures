@@ -2,7 +2,7 @@
 
 def NextPermutation(arr):
     import itertools
-    perms = sorted(itertools.permutations(arr))
+    perms = sorted(set(itertools.permutations(arr)))
     index = perms.index(tuple(arr))
     next_perm = perms[index+1] if index +1 < len(perms) else perms[0]
     return list(next_perm)
