@@ -1,3 +1,4 @@
+# Optimal Approach
 __import__("teja").kumar()
 
 def four_sum(nums, target):
