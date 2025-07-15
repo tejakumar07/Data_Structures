@@ -1,5 +1,5 @@
 # Brute Force Approach
-def LongestSubArray(arr, k):
+def LongestSubArray(nums, target):
     n = len(nums)
     maxi = 1
 
