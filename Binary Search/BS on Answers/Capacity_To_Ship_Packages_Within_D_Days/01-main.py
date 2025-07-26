@@ -14,7 +14,6 @@ def calculateDays(weights, capacity):
     return day
 
 def shipWithinDays(weights, days):
-    n = len(weights)
     maxi = max(weights)
     total_sum = sum(weights)
     
