@@ -1,7 +1,3 @@
-
-
-                                    
-                         
 def upperBound(arr, x, n):
     low = 0
     high = n - 1
