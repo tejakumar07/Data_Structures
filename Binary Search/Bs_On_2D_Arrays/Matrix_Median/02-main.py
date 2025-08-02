@@ -1,3 +1,7 @@
+
+
+                                    
+                         
 def upperBound(arr, x, n):
     low = 0
     high = n - 1
@@ -41,13 +45,16 @@ def median(matrix, m, n):
 
     return low
 
-
 if __name__ == "__main__":
-    matrix = [[ 1, 5, 7, 9, 11 ],
-      [ 2, 3, 4, 8, 9 ],
-      [ 4, 11, 14, 19, 20 ],
-      [ 6, 10, 22, 99, 100 ],
-      [ 7, 15, 17, 24, 28 ]]
-    
-    ans = findMatrixMedian(matrix)
-    print(ans)
+    matrix = [
+        [1, 2, 3, 4, 5],
+        [8, 9, 11, 12, 13],
+        [21, 23, 25, 27, 29]
+    ]
+    m = len(matrix)
+    n = len(matrix[0])
+    ans = median(matrix, m, n)
+    print("The median element is:", ans)
+                                    
+                                
+
