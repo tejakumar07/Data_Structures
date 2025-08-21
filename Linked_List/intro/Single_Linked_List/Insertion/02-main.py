@@ -11,7 +11,7 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-        
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -20,10 +20,35 @@ class LinkedList:
         if self.head == None:
             print("Linked List is Empty")
             return
-        iterator = self.head
-        while iterator:
-            print(iterator.data)
-            iterator = iterator.next
-    
-    def InsertionAtEnd(self):
         
+        llstr = ""
+        itr = self.head
+        
+        while itr:
+            llstr += str(itr.data) + "----->" if itr.next else str(itr.data)
+            itr = itr.next 
+        print(llstr)
+    
+    def insertionAtEnd(self, data):
+        if self.head == None:
+            self.head = Node(data)
+            return
+
+        itr = self.head
+        while itr.next:
+            itr = itr.next
+        itr.next = Node(data)
+        return
+
+if __name__ == "__main__":
+    ll = LinkedList()
+    ll.head = Node(21)
+    second = Node(16)
+    third = Node(99)
+    fourth = Node(80)
+    ll.head.next = second
+    second.next = third
+    third.next = fourth
+    ll.printThing()
+    ll.insertionAtEnd(1)
+    ll.printThing()
