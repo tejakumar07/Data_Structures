@@ -21,18 +21,25 @@ class LinkedList:
         return llstr
 
     def deletion(self, indx):
+        if self.head is None:
+            print("Linked List is Empty")
+            return
+        
         if indx == 0:
             self.head = self.head.next
             return
+        
         itr = self.head
         count = 0
-        while itr:
+        while itr and itr.next:
             if count == indx - 1:
-                itr.next = itr.next.next 
+                itr.next = itr.next.next
                 return
-            itr = itr.next 
+            itr = itr.next
             count += 1
-        print("Index out of Bound")
+        
+        print("Index out of range")
+
         
 if __name__ == "__main__":
     ll = LinkedList()
