@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b0c95d23-1398-45c7-915a-2fdcd84ab704" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/3SumSmaller00.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/3SumSmaller01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/add2fractions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/specialsubarray.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/streamfirstnonrepeating.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +62,13 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/my-work-space/Data_Structures",
+    "last_opened_file_path": "/home/tejakumar/my-workspace/Data_Structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -102,6 +107,9 @@
       <workItem from="1756788467818" duration="1798000" />
       <workItem from="1756827319169" duration="566000" />
       <workItem from="1756828699537" duration="69000" />
+      <workItem from="1756897784108" duration="710000" />
+      <workItem from="1756898509255" duration="2056000" />
+      <workItem from="1756959530695" duration="400000" />
     </task>
     <servers />
   </component>
