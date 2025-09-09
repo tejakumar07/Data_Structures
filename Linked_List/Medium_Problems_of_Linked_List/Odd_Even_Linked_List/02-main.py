@@ -23,37 +23,21 @@ class LinkedList:
         return llstr
 
     def oddEvenList(self):
-        if self.head is None:
-            return "Linked List is empty"
+        if self.head is None or self.head.next is None:
+            return self.head
         
-        arr = []
-        itr = self.head
+        odd = self.head
+        even = even_head = self.head.next
         
-        while itr and itr.next:
-            arr.append(itr.data)
-            itr = itr.next.next
-        
-        if itr:
-            arr.append(itr.data)
-        
-        itr = self.head.next
-        
-        while itr and itr.next:
-            arr.append(itr.data)
-            itr = itr.next.next
-        
-        if itr:
-            arr.append(itr.data)
+        while even and even.next:
+            odd.next = even.next
+            odd = odd.next
             
-        i = 0
-        itr = self.head
+            even.next = odd.next
+            even = even.next
         
-        while itr:
-            itr.data = arr[i]
-            i += 1
-            itr = itr.next
-        
-        return "Operation is Completed please check yourself"
+        odd.next = even_head
+            
     
 if __name__ == "__main__":
     ll = LinkedList()
@@ -64,9 +48,6 @@ if __name__ == "__main__":
     ll.head.next.next.next.next = Node(6)
     ll.head.next.next.next.next.next = Node(4)
     ll.head.next.next.next.next.next.next = Node(7)
-    ans = ll.display()
-    print(ans)
-    response = ll.oddEvenList()
-    print(response)
-    ans = ll.display()
-    print(ans)
+    print(ll.display())
+    ll.oddEvenList()
+    print(ll.display())
